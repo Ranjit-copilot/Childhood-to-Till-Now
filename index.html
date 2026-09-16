@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>From School Bag to Mountain Trails — My Story</title>
+<meta name="description" content="A personal journey from Belsari village, school days, Mumbai work life, friendships and the mountains that became home.">
+<style>
+:root{
+  --bg:#171914;
+  --bg2:#211f18;
+  --panel:rgba(28,28,23,.76);
+  --line:#5c5947;
+  --cream:#f1efe7;
+  --muted:#b7b5aa;
+  --blue:#1769ff;
+  --yellow:#f2ff00;
+  --gold:#e4c33a;
+  --border:rgba(230,227,212,.17);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--cream);
+  font-family:Inter,Arial,Helvetica,sans-serif;
+  line-height:1.7;
+  overflow-x:hidden;
+}
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  opacity:.20;
+  background-image:
+    radial-gradient(circle at 20% 10%, rgba(255,255,255,.04), transparent 25%),
+    repeating-radial-gradient(ellipse at 20% 30%, transparent 0 28px, rgba(115,111,84,.25) 29px 30px, transparent 31px 58px);
+  background-size:auto, 430px 300px;
+  mix-blend-mode:screen;
+  z-index:-2;
+}
+body:after{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background:radial-gradient(circle at center, transparent 35%, rgba(0,0,0,.45) 100%);
+  z-index:-1;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.progress{
+  position:fixed;top:0;left:0;height:3px;background:var(--yellow);
+  width:0;z-index:1000;
+}
+.container{width:min(1120px,92%);margin:auto}
+.topbar{
+  position:sticky;top:0;z-index:99;
+  background:rgba(17,18,15,.88);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.nav{
+  min-height:70px;display:flex;align-items:center;justify-content:space-between;
+}
+.logo{
+  font-weight:900;letter-spacing:-1px;text-transform:uppercase;
+  font-size:17px;
+}
+.logo span{color:var(--blue)}
+.navlinks{display:flex;gap:24px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#aaa99f}
+.navlinks a:hover{color:var(--yellow)}
+.hero{
+  min-height:92vh;display:grid;place-items:center;
+  padding:90px 0 70px;position:relative;
+}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:end}
+.kicker{
+  display:inline-flex;align-items:center;gap:12px;
+  border:1px solid rgba(255,255,255,.22);
+  padding:9px 16px;font-size:11px;letter-spacing:3px;text-transform:uppercase;
+  color:#c9c7bd;
+}
+.kicker:before{content:"";width:22px;height:1px;background:var(--yellow)}
+h1{
+  font-size:clamp(52px,8vw,104px);line-height:.91;
+  letter-spacing:-5px;text-transform:uppercase;margin:26px 0;
+  font-weight:950;
+}
+h1 .blue,.blue{color:var(--blue)}
+.hero p{font-size:20px;line-height:1.55;color:#c0beb4;max-width:680px}
+.hero-note{
+  border-left:1px solid var(--line);padding-left:24px;
+  color:#9f9d92;font-size:13px;letter-spacing:1px;
+}
+.hero-note strong{display:block;color:var(--cream);font-size:36px;line-height:1;margin-bottom:8px}
+.section{padding:110px 0;position:relative}
+.rule{
+  display:flex;align-items:center;gap:18px;color:#aaa89d;
+  font-family:monospace;font-size:12px;letter-spacing:4px;
+}
+.rule:before{content:"";width:58px;height:1px;background:var(--line)}
+.rule:after{content:"";height:1px;background:var(--line);flex:1}
+.section-title{
+  font-size:clamp(40px,6vw,76px);line-height:.95;letter-spacing:-3px;
+  text-transform:uppercase;margin:28px 0 18px;font-weight:950;
+}
+.section-intro{max-width:760px;color:#b7b5aa;font-size:18px}
+.story{
+  margin-top:55px;display:grid;grid-template-columns:120px 1fr;gap:35px;
+}
+.story-year{
+  font-family:monospace;color:var(--yellow);font-size:15px;letter-spacing:2px;
+  padding-top:9px;
+}
+.story-card{
+  border-left:1px solid var(--line);
+  padding:0 0 55px 34px;
+  position:relative;
+}
+.story-card:before{
+  content:"";position:absolute;left:-5px;top:9px;width:9px;height:9px;
+  background:var(--blue);border-radius:50%;box-shadow:0 0 0 5px rgba(23,105,255,.10);
+}
+.story-card h3{
+  margin:0 0 14px;font-size:30px;line-height:1.1;
+  text-transform:uppercase;letter-spacing:-1px;
+}
+.story-card p{color:#c0beb5;font-size:17px;max-width:820px}
+.quote{
+  margin:35px 0;padding:30px 32px;border:1px solid var(--border);
+  background:rgba(20,20,17,.45);position:relative;
+}
+.quote:before{
+  content:"“";position:absolute;right:20px;top:-20px;
+  color:var(--blue);font-size:100px;line-height:1;opacity:.5;
+}
+.quote p{margin:0;font-size:25px;line-height:1.35;color:var(--cream);font-weight:700}
+.friend{
+  display:inline-block;font-weight:950;letter-spacing:2px;font-size:1.05em;
+  color:var(--yellow);text-transform:uppercase;
+}
+.gallery-head{
+  display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:35px
+}
+.gallery-head small{color:#8f8d84;letter-spacing:2px;text-transform:uppercase}
+.gallery{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
+}
+.photo{
+  aspect-ratio:4/5;border:1px solid var(--border);background:
+  linear-gradient(145deg,rgba(255,255,255,.05),rgba(0,0,0,.3));
+  position:relative;overflow:hidden;
+}
+.photo:before{
+  content:"PHOTO";position:absolute;inset:0;display:grid;place-items:center;
+  color:#69675c;font-size:12px;letter-spacing:5px;
+}
+.photo:nth-child(2){transform:translateY(28px)}
+.photo:nth-child(3){transform:translateY(-10px)}
+.photo:nth-child(4){transform:translateY(10px)}
+.photo:nth-child(5){transform:translateY(-18px)}
+.photo:nth-child(6){transform:translateY(24px)}
+.photo img{width:100%;height:100%;object-fit:cover;position:relative;z-index:2}
+.photo:has(img):before{display:none}
+.place{
+  padding:85px 0;border-top:1px solid rgba(255,255,255,.08)
+}
+.place-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:start}
+.place-feature .place-grid{grid-template-columns:1fr;gap:0}
+.place-feature .place-head{
+  display:flex;justify-content:space-between;align-items:end;gap:30px;
+  flex-wrap:wrap;margin-bottom:40px;padding-bottom:30px;border-bottom:1px solid var(--border);
+}
+.place-feature .place-head h3{margin:8px 0 0}
+.place-feature .place-body p{max-width:760px}
+.place-num{font-family:monospace;color:var(--yellow);letter-spacing:3px}
+.place h3{
+  font-size:clamp(38px,5vw,65px);line-height:.95;
+  text-transform:uppercase;letter-spacing:-2px;margin:15px 0;
+}
+.place p{color:#b7b5aa;font-size:17px}
+.tag{
+  display:inline-block;border:1px solid rgba(255,255,255,.16);
+  padding:7px 12px;margin:7px 5px 0 0;color:#aaa89d;font-size:11px;
+  letter-spacing:1.5px;text-transform:uppercase
+}
+.final{
+  min-height:75vh;display:grid;place-items:center;text-align:center;
+  padding:100px 0;
+}
+.final h2{
+  font-size:clamp(52px,9vw,110px);line-height:.87;letter-spacing:-5px;
+  text-transform:uppercase;margin:25px auto;max-width:1000px;
+}
+.final p{max-width:680px;margin:auto;color:#b8b6ac;font-size:18px}
+.btn{
+  display:inline-block;margin-top:32px;background:var(--yellow);color:#12130f;
+  padding:15px 24px;font-weight:900;letter-spacing:2px;text-transform:uppercase;
+  font-size:12px;
+}
+.footer{padding:40px 0;border-top:1px solid rgba(255,255,255,.1);color:#77756c;font-size:12px;display:flex;justify-content:space-between}
+@media(max-width:800px){
+  .navlinks{display:none}
+  .hero{min-height:auto;padding:85px 0}
+  .hero-grid,.place-grid{grid-template-columns:1fr;gap:30px}
+  .place-feature .place-head{flex-direction:column;align-items:flex-start;gap:14px}
+  h1{letter-spacing:-3px}
+  .story{grid-template-columns:65px 1fr;gap:15px}
+  .story-card{padding-left:22px}
+  .story-card p{font-size:16px}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .gallery .photo:nth-child(n){transform:none}
+  .section{padding:80px 0}
+  .footer{flex-direction:column;gap:10px}
+}
+
+.gallery-fab{
+  position:fixed;right:22px;bottom:22px;z-index:998;
+  background:var(--yellow);color:#12130f;border:none;cursor:pointer;
+  padding:14px 20px;font-weight:900;letter-spacing:2px;text-transform:uppercase;
+  font-size:12px;box-shadow:0 8px 24px rgba(0,0,0,.4);display:flex;align-items:center;gap:8px;
+}
+.gallery-nav-link{cursor:pointer}
+.gallery-modal{
+  display:none;position:fixed;inset:0;z-index:999;background:rgba(10,10,8,.92);
+  backdrop-filter:blur(6px);padding:60px 20px 20px;overflow-y:auto;
+}
+.gallery-modal.open{display:block}
+.gallery-modal-inner{width:min(1100px,96%);margin:auto}
+.gallery-close{
+  position:fixed;top:18px;right:22px;background:none;border:1px solid rgba(255,255,255,.25);
+  color:var(--cream);font-size:22px;width:42px;height:42px;cursor:pointer;z-index:1000;
+}
+.gallery-title{font-size:clamp(28px,4vw,44px);text-transform:uppercase;letter-spacing:-2px;margin:0 0 8px;font-weight:950}
+.gallery-sub{color:#9f9d92;font-size:13px;letter-spacing:1px;margin-bottom:30px}
+.gallery-back-btn{
+  display:inline-flex;align-items:center;gap:8px;color:var(--yellow);cursor:pointer;
+  font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:24px;border:none;background:none;padding:0;
+}
+.folder-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px}
+.folder-card{
+  border:1px solid var(--border);padding:26px 18px;cursor:pointer;text-align:center;
+  background:rgba(255,255,255,.03);transition:.2s;
+}
+.folder-card:hover{background:rgba(255,255,255,.08);border-color:var(--yellow)}
+.folder-card .fname{font-weight:800;text-transform:uppercase;letter-spacing:1px;font-size:14px}
+.photo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.photo-grid img{
+  width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid var(--border);cursor:pointer;
+}
+.gallery-state{color:#9f9d92;font-size:14px;padding:40px 0;text-align:center}
+.lightbox{
+  display:none;position:fixed;inset:0;z-index:1001;background:rgba(0,0,0,.95);
+  place-items:center;padding:30px;
+}
+.lightbox.open{display:grid}
+.lightbox img{max-width:100%;max-height:90vh;object-fit:contain}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="topbar">
+  <div class="container nav">
+    <div class="logo">Ranjit <span>/</span> The Journey</div>
+    <nav class="navlinks">
+      <a href="#story">Story</a>
+      <a href="#people">People</a>
+      <a href="#mountains">Mountains</a>
+      <a href="#trails">Trails</a>
+      <span class="gallery-nav-link" onclick="openGallery()">Gallery</span>
+    </nav>
+  </div>
+</header>
+
+<button class="gallery-fab" onclick="openGallery()">📷 Gallery</button>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="kicker">A PERSONAL JOURNEY / 01</div>
+      <h1>FROM<br>SCHOOL BAG<br>TO <span class="blue">MOUNTAIN</span><br>TRAILS.</h1>
+      <p>
+        Belsari ke ek chhote se gaon se shuru hui kahani — ek lakdi ki patri,
+        nargaj ki kalam, dopahar ka ek plate khana, school ka bag, Mumbai ki
+        local trains, dosti, naukri aur phir un pahadon tak… jahan jaakar
+        mujhe laga ki shayad main khud ko dobara dhoond raha hoon.
+      </p>
+    </div>
+    <div class="hero-note">
+      <strong>2003 → NOW</strong>
+      Ek safar jo sirf jagah badalne ka nahi tha.
+      Yeh dheere-dheere khud ko samajhne ka safar tha.
+    </div>
+  </div>
+</section>
+
+<section class="section" id="story">
+<div class="container">
+  <div class="rule"><span>(01)</span><span>THE BEGINNING</span></div>
+  <h2 class="section-title">OUR STORY<br>STARTED <span class="blue">SMALL.</span></h2>
+  <p class="section-intro">
+    Mujhe bachpan mein nahi pata tha ki main kya banunga. Bas gharwale school bhejte the,
+    aur main school chala jata tha. Tab life ke goals nahi the — bas agla din tha.
+  </p>
+
+  <div class="story">
+    <div class="story-year">~2003</div>
+    <article class="story-card">
+      <h3>Belsari — Pehla School</h3>
+      <p>
+        Main Belsari gaon mein paida hua. Mera pehla school tha <b>Baram Baba Primary School</b>.
+        Aaj jab us waqt ko yaad karta hoon to sab kuch bahut simple lagta hai. Na fancy
+        notebooks, na expensive school bag aur na hi yeh samajh ki padhai aakhir hoti kya hai.
+        Lakdi ki patri hoti thi, nargaj se apni kalam banate the, dawat hoti thi — aur dopahar
+        mein ek plate khana milta tha.
+      </p>
+      <p>
+        Main woh plate lekar school jata tha. Shayad us waqt mujhe padhai se zyada kuch samajh
+        nahi aata tha. Gharwale bhejte the, main chala jata tha. Bas. Aise hi lagbhag teen saal
+        nikal gaye. Lekin wahi teen saal meri kahani ka pehla chapter ban gaye.
+      </p>
+    </article>
+
+    <div class="story-year">2006</div>
+    <article class="story-card">
+      <h3>Ek Mahine Mein Ek Class Aage</h3>
+      <p>
+        2006 mein maine <b>Saraswati Gyan Mandir</b> mein admission liya. Mujhe Class 2 mein
+        admission mila. Lekin shayad teachers ne meri padhai ke prati pakad aur meri capability
+        ko kuch alag tarah se dekha. Sirf ek mahine ke andar mujhe Class 3 mein promote kar diya gaya.
+      </p>
+      <p>
+        Us din ki khushi aaj bhi yaad hai. Pehli baar mere andar ek feeling aayi thi —
+        <b>“Shayad main hoshiyaar hoon.”</b> Chhoti si baat thi, lekin bachpan ke Ranjit ke liye
+        woh bahut badi baat thi. Wahi feeling mujhe aage badhati rahi.
+      </p>
+      <p>
+        Maine wahan Class 5 tak padha. Uske baad meri padhai ka agla chapter Samta School se shuru hua.
+      </p>
+    </article>
+
+    <div class="story-year">2009</div>
+    <article class="story-card">
+      <h3>Class 6 — Samta School</h3>
+      <p>
+        2009 mein Class 6 ke liye Samta School mein admission hua. Class 8 tak wahi padha.
+        Uske baad isi educational journey ka agla padav tha <b>Shri Sukhdev Mahavir Inter College</b>,
+        jahan Class 9 mein admission liya.
+      </p>
+    </article>
+
+    <div class="story-year">2012–2016</div>
+    <article class="story-card">
+      <h3>Boards, Marks & A Growing Boy</h3>
+      <p>
+        2012 mein Class 9, phir 2014 mein Class 10 ka board exam. Result aaya — <b>74%</b>.
+        Main pass hua aur khushi hui. 2016 mein Class 12 ka board diya aur <b>67%</b> ke saath
+        pass hua.
+      </p>
+      <p>
+        Lekin yahin se mere andar kuch badalne laga. Padhai ka woh purana josh dheere-dheere
+        khatam ho raha tha. Lagta tha — ab bada ho gaya hoon, ab paisa kamaunga, job karunga,
+        aur life mein bas maze hi maze honge.
+      </p>
+      <div class="quote">
+        <p>“Mujhe laga tha job ka matlab azaadi hai. Mujhe nahi pata tha ki kabhi-kabhi job bhi ek naya school ban jaati hai.”</p>
+      </div>
+    </article>
+
+    <div class="story-year">APR 2017</div>
+    <article class="story-card">
+      <h3>Mumbai — The Real Journey</h3>
+      <p>
+        April 2017 mein main Mumbai aa gaya. Yahin se meri asli journey start hui.
+        Sapna simple tha — naukri karunga, paise kamaunga, aur life enjoy karunga.
+        Lekin Mumbai ne mujhe bahut jaldi samjha diya ki adulthood Instagram caption jaisa simple nahi hota.
+      </p>
+      <p>
+        Main Ambernath mein rehta tha aur job Mulund mein thi. Roz local train ke dhakke,
+        subah ghar se nikalna, office pahunchna, poora din kaam karna aur raat ko wapas ghar.
+        Ek ajeeb si similarity thi — gaon mein kandhe par school bag lekar ghar se nikalta tha,
+        aur Mumbai mein bhi kandhe par bag lekar hi nikalta tha.
+      </p>
+      <p>
+        Farq bas itna tha ki gaon wale school bag ko dekhkar lagta tha ki future ban raha hai,
+        aur Mumbai wale office bag ko dekhkar kabhi-kabhi lagta tha ki bas Monday se Sunday tak
+        ka cycle chal raha hai.
+      </p>
+    </article>
+
+    <div class="story-year">JUN 2017</div>
+    <article class="story-card">
+      <h3>First Job — Aur Ek Unexpected Dost</h3>
+      <p>
+        June 2017 mein maine apni first job start ki. Job sirf 6 months chali, lekin us job ne
+        mujhe ek aisi cheez di jo salary slip mein kabhi nahi dikhti — ek best friend.
+      </p>
+      <p>
+        Starting mein hum dono ki bilkul nahi banti thi. Chhoti-chhoti baaton par difference,
+        apni-apni personality aur woh classic office wali “36 ka aankda” situation.
+        Lekin waqt ke saath wahi insaan dost ban gaya.
+      </p>
+      <p>
+        Main uska naam nahi likhunga. Agar kabhi yeh page us tak pahucha, to shayad use bina naam
+        ke bhi samajh aa jayega ki main kiski baat kar raha hoon.
+      </p>
+      <p>
+        Jab mujhe us job se kantala aata tha, uski wajah se wahi job thodi bearable lagne lagi thi.
+        Mumbai jaise shehar mein, jahan har chehra anjaan tha, ek achha dost mil jaana apne aap mein
+        bahut badi baat thi.
+      </p>
+    </article>
+
+    <div class="story-year">2018–2019</div>
+    <article class="story-card">
+      <h3>New Job, New Role, Old Friendship</h3>
+      <p>
+        6 months ke baad mujhe new opportunity mili aur hum dono ne apni-apni jobs change kar di.
+        Life alag direction mein chali gayi. Kuch time tak contact bhi nahi raha.
+        Main IT Support Engineer ke role mein aa gaya — naye log, nayi jagah, nayi responsibilities.
+        Main khush tha aur career dheere-dheere shape lene laga.
+      </p>
+      <p>
+        Phir lagbhag do saal baad Facebook par usi friend ki friend request aayi.
+        Request accept hui, numbers exchange hue, aur baatein phir shuru ho gayi.
+        2019 mein usne bhi job switch ki aur Mulund mein job mil gayi.
+        Main Mulund West mein aur woh East mein — aur shaam hote hi distance practically khatam.
+      </p>
+      <p>
+        Hum milte, baatein karte aur kab time nikal jata pata hi nahi chalta.
+        Kabhi-kabhi ghar late pahunchte aur lagta ki din bahut chhota hai.
+      </p>
+    </article>
+
+    <div class="story-year">2019–2022</div>
+    <article class="story-card">
+      <h3>Job Ke Saath Graduation</h3>
+      <p>
+        Mumbai mein job karte-karte ek point par mujhe realise hua ki sirf 12th ke baad ruk jaana
+        shayad mere career ke liye enough nahi hoga. Job chal rahi thi, experience bhi mil raha tha,
+        lekin andar se ek thought baar-baar aa raha tha — <b>“Aage badhna hai to graduation complete karna padega.”</b>
+      </p>
+      <p>
+        Isliye 2019 mein maine <b>BA</b> mein admission liya. Distance learning choose ki, kyunki
+        job chhodna possible nahi tha. Ab routine aur interesting ho gaya tha — din mein job,
+        Mumbai ki local aur office ki responsibilities; aur free time mein padhai, assignments
+        aur exams.
+      </p>
+      <p>
+        School aur college ke purane din yaad aate the, lekin is baar difference bahut bada tha.
+        Tab gharwale school bhejte the. Ab mujhe khud decide karna tha ki padhna hai.
+        Is baar bag kisi aur ne nahi diya tha — <b>responsibility bhi meri thi aur decision bhi.</b>
+      </p>
+      <p>
+        2019 se 2022 tak job ke saath graduation continue ki. Kabhi kaam ka pressure,
+        kabhi padhai ka pressure, aur beech mein life ke apne ups and downs — phir bhi
+        maine journey nahi chhodi.
+      </p>
+      <div class="quote">
+        <p>“Pehli baar padhai isliye nahi kar raha tha kyunki gharwale bol rahe the. Is baar padh raha tha kyunki mujhe khud pata tha ki mujhe aage jaana hai.”</p>
+      </div>
+      <p>
+        Aakhir 2022 mein mera BA graduation complete hua aur main <b>Second Division</b> se pass hua.
+        Shayad marks extraordinary nahi the, lekin mere liye degree ki value usse kahin zyada thi —
+        kyunki uske peeche job, distance learning, time management aur haar na maanne ki poori kahani thi.
+      </p>
+      <p>
+        Bachpan mein jo padhai bas routine thi, wahi padhai 2022 mein meri apni choice ban chuki thi.
+        Aur yahi meri journey ka ek important turning point tha.
+      </p>
+    </article>
+
+    <div class="story-year">2020</div>
+    <article class="story-card">
+      <h3>Lockdown & Those Quiet Evenings</h3>
+      <p>
+        Phir lockdown aa gaya. Offices band hue, main gaon chala gaya, duniya ruk si gayi.
+        Lekin dosti nahi ruki. Calls aur baatein chalti rahi.
+      </p>
+      <p>
+        October 2020 ke aas-paas office life dheere-dheere wapas aayi. Tab tak hum dono bahut
+        achhe dost ban chuke the. Office timings alag hoti thi — uska office jaldi close hota,
+        mera lagbhag ek ghanta baad. Woh East se West aakar mere office ke neeche wait karti thi.
+        Main job se nikalta aur hum saath ghar jaate.
+      </p>
+      <p>
+        Tab tak mera ghar Ambernath se Kalyan shift ho chuka tha aur uska ghar Kalyan ke agle
+        station par tha. Roz ka ek chhota sa routine tha, lekin aaj peeche mudkar dekhta hoon to
+        wahi ordinary evenings bahut special lagti hain.
+      </p>
+    </article>
+
+    <div class="story-year">NEXT CHAPTER</div>
+    <article class="story-card">
+      <h3>Vidyavihar — The People Who Changed Me</h3>
+      <p>
+        Us friend ne Mulund se job change ki. Kuch time baad maine bhi Mulund se Vidyavihar,
+        station ke paas ek new opportunity join ki. Yahan mujhe kuch bahut achhe log mile.
+        Aise log jinke saath office sirf office nahi lagta tha — lagta tha apne log hain.
+      </p>
+      <p>
+        Aaj bhi unmein se kai log contact mein hain. Kabhi call, kabhi message, kabhi milna —
+        connections waqt ke saath kam nahi hue.
+      </p>
+      <p>
+        Aur isi chapter mein meri life mein ek aisa dost aaya jisne mujhe sirf dost nahi,
+        balki meri life ko thoda alag nazariye se dekhna sikhaya.
+        Uska naam hai <span class="friend">VINAYAK</span>.
+      </p>
+      <p>
+        Uske saath rehkar maine apne mann ki sunna start kiya. Jo cheezein sirf “kabhi karunga”
+        wali list mein thi, unhe actually karna start kiya. Shayad isi wajah se meri life mein
+        ek naya word add hua — <b>explore.</b>
+      </p>
+    </article>
+
+    <div class="story-year">FIRST TREK</div>
+    <article class="story-card">
+      <h3>Harishchandragad — The Mountains Found Me</h3>
+      <p>
+        Mujhe pahad pehle se pasand the, lekin unke saath mera real connection mere first trek
+        <b>Harishchandragad</b> se hua. Lagbhag 4500 ft ki height, thakan, chadhai aur phir
+        upar pahunchkar woh view — kuch alag hi tha.
+      </p>
+      <p>
+        Humne camping ki. Raat ko aasman mein timtimate stars, thandi hawa, pahadon ke beech
+        Maggie aur woh silence… mujhe laga ki city mein jo cheez main dhoond nahi pa raha tha,
+        shayad woh yahan mil rahi hai — <b>sukoon.</b>
+      </p>
+      <p>
+        Us raat ke baad mera dil pahadon se lag gaya. Aur aaj tak nahi chhuta.
+        Jab mann karta hai, main pahadon mein nikal jata hoon — kabhi doston ke saath,
+        kabhi kisi ke saath bhi jo ready ho, aur kabhi bilkul akela.
+      </p>
+    </article>
+
+    <div class="story-year">NEXT MOVE</div>
+    <article class="story-card">
+      <h3>Back to Mulund — A New Circle</h3>
+      <p>
+        Vidyavihar ke baad maine ek dost ke through phir Mulund mein job switch ki.
+        Us dost ka naam hai <span class="friend">JIGAR</span>.
+        Jigar pehle bhi Mulund wale job chapter mein mera dost tha, aur ab hum ek corporate
+        environment mein phir saath aa gaye.
+      </p>
+      <p>
+        Yahan ek aur dost thi — Jigar ki friend, jo dheere-dheere meri bhi dost ban gayi.
+        Main use yahan <b>Rj</b> likh raha hoon. Naam nahi lunga. Agar kabhi woh yeh story
+        padhegi, to shayad samajh jayegi.
+      </p>
+      <p>
+        Hum teenon ka apna ek chhota sa circle ban gaya. Office, conversations, plans aur
+        weekends ko kahin na kahin nikal jaana. Jigar ko pahad utne pasand nahi the,
+        lekin Rj pahadon ke liye ready rehti thi — aur main to pahad ka naam sunte hi ready.
+      </p>
+    </article>
+  </div>
+</div>
+</section>
+
+<section class="section" id="people">
+<div class="container">
+  <div class="rule"><span>(02)</span><span>THE PEOPLE</span></div>
+  <h2 class="section-title">SOME PEOPLE<br>BECOME <span class="blue">CHAPTERS.</span></h2>
+  <p class="section-intro">
+    Har journey mein kuch log destination nahi hote. Woh raste ka hissa hote hain —
+    kabhi kuch sikhane ke liye, kabhi hansaane ke liye, aur kabhi bas yeh yaad dilane ke liye
+    ki journey akeli nahi hoti.
+  </p>
+
+  <div class="story" style="margin-top:45px">
+    <div class="story-year">01</div>
+    <article class="story-card">
+      <h3><span class="friend">VINAYAK</span></h3>
+      <p>
+        Woh dost jisne mujhe apne mann ki sunna aur life ko sirf job–salary–Sunday ke cycle
+        se bahar dekhna sikhaya. Uske baad exploration meri personality ka part ban gaya.
+      </p>
+    </article>
+    <div class="story-year">02</div>
+    <article class="story-card">
+      <h3><span class="friend">JIGAR</span></h3>
+      <p>
+        Gujarati hai, main UP ka hoon — lekin friendship mein geography ka koi role nahi.
+        Uske liye main “bhaiya” hoon ya UP wala hoon, isse zyada important yeh hai ki main uska dost hoon.
+        Office life mein aise dost milna lucky hona hai.
+      </p>
+    </article>
+    <div class="story-year">03</div>
+    <article class="story-card">
+      <h3>RJ</h3>
+      <p>
+        Har friendship perfect nahi hoti. Kabhi bahut achhi banti hai, kabhi differences hote hain.
+        Rj ke saath bhi kuch aisa hi hai. Reason shayad mujhe bhi perfectly nahi pata,
+        lekin office mein woh helpful hai aur pahadon par saath chalne wali dost bhi.
+      </p>
+    </article>
+  </div>
+</div>
+</section>
+
+<section class="section" id="mountains">
+<div class="container">
+  <div class="rule"><span>(03)</span><span>THE MOUNTAINS</span></div>
+  <h2 class="section-title">WHEN THE CITY<br>GETS LOUD,<br>I CHOOSE <span class="blue">HEIGHT.</span></h2>
+  <p class="section-intro">
+    Mumbai ne mujhe hustle diya. Jobs ne experience diya. Doston ne memories di.
+    Lekin pahadon ne mujhe silence diya — aur kabhi-kabhi silence hi sabse zaroori hota hai.
+  </p>
+
+  <div class="quote">
+    <p>“Jab mann bahut kuch sochne lage, main pahadon mein chala jata hoon. Wahan answers hamesha nahi milte, lekin dimaag zaroor halka ho jata hai.”</p>
+  </div>
+</div>
+</section>
+
+<section class="section" id="trails">
+<div class="container">
+  <div class="rule"><span>(04)</span><span>TRAIL LOG</span></div>
+  <h2 class="section-title">PLACES THAT<br>STAY <span class="blue">WITH ME.</span></h2>
+  <p class="section-intro">
+    Neeche har jagah ke liye 5 photo slots ready hain. Tum photos upload karoge to in sections
+    mein exact images embed ki ja sakti hain.
+  </p>
+
+  <!-- PHOTO PLACEHOLDER SECTIONS -->
+  <div class="place place-feature">
+    <div class="place-grid">
+      <div class="place-head">
+        <div>
+          <div class="place-num">01 / THREE VISITS, THREE ROUTES</div>
+          <h3>Harishchandragad</h3>
+        </div>
+        <div><span class="tag">Trek</span><span class="tag">Camping</span><span class="tag">Stars</span><span class="tag">Nalichi Vaat</span><span class="tag">First Mountain Memory</span></div>
+      </div>
+      <div class="place-body">
+        <p>
+          Harishchandragad mere liye sirf ek trek nahi hai. Main yahan 3 baar ja chuka hoon, aur har baar kisi naye raste se,
+          naye logon ke saath aur ek nayi kahani lekar wapas aaya hoon. Par ye pehli baar ka experience un dono trips se bilkul alag tha.
+        </p>
+        <p>
+          Kalyan se Harishchandragad lagbhag 100+ km door hai. Mere saath Vinayak aur uska ek dost tha — teeno ek hi bike par.
+          Saturday subah kareeb 7 baje Kalyan se ride start ki. Road par subah ka peaceful atmosphere, thandi hawa aur aage dikhte pahad —
+          jaise-jaise Mumbai se door ja rahe the, waise-waise city ki bheed peeche chhootti ja rahi thi.
+        </p>
+        <p>
+          Kareeb 10 baje Belpada Village, trek ke base point par pahunche. Bike wahi rakhi aur asli journey shuru hui — Nalichi Vaat se.
+          Koi normal walking trail nahi thi yeh — kabhi rock patches, kabhi steep climbing, kabhi aise sections jahan har step sambhal kar rakhna padta tha.
+          Thakaan ho rahi thi, lekin saamne ke pahad dekhkar rukne ka mann bhi nahi kar raha tha.
+        </p>
+
+
+        <p>
+          Chadhte-chadhte waqt ka pata hi nahi chala aur shaam kareeb 4:30 baje hum Harishchandragad pahunch gaye.
+          Itni lambi climb ke baad sabse pehli feeling thi — bhookh. Wahi pahad par khana khaya, simple sa, lekin kisi five-star meal se kam nahi laga.
+          Raat ko wahi camping ki.
+        </p>
+
+        <div class="quote">
+          <p>“City mein jahan lights ki wajah se stars mushkil se dikhte hain, wahan pahad par raat ke sannate mein aasman ko dekhna alag hi sukoon deta hai.”</p>
+        </div>
+
+        <p>
+          Thandi hawa, andhera, aasman mein timtimate stars aur saamne khamosh pahad — us raat kuch karne ki zarurat nahi thi. Bas baithkar aasman dekhna hi kaafi tha.
+        </p>
+
+        <p><strong style="color:var(--cream)">Sunday subah — pahad ka doosra roop.</strong>
+          Subah humne Harishchandreshwar Temple mein darshan kiye — Lord Shiva ko samarpit ye ancient temple ek massive black rock se carved hai,
+          apni Hemadpanti architectural style ke liye jaana jaata hai. Wahan khade hokar ek ajeeb sa connection feel hota hai —
+          itni purani jagah, itne saalon se wahi khadi, aur hum kuch waqt ke liye us history ka ek chhota sa hissa ban gaye.
+        </p>
+        <p>
+          Uske baad Kedareshwar Cave gaye. Cave ke andar bada Shiva Linga, uske aas-paas saal bhar rehne wala thanda paani,
+          aur structure ko support karta hua ek bacha hua stone pillar (4 pillar the jisme 3 toot chuke hain) — wahan ka atmosphere hi alag tha.
+          Kuch jagah aisi hoti hain jahan photo lene se zyada mann karta hai bas kuch der chup-chaap khade raho.
+        </p>
+        <p>
+          Cave ke baad wahi chai banayi, chai pi, breakfast kiya. Pahad par khud banayi hui chai ka taste bhi alag hota hai — shayad chai mein kuch special nahi tha,
+          lekin us moment mein sab kuch special tha. Breakfast ke baad descent start kiya — chadhai jitni energy lagi thi, utni hi concentration neeche utarte waqt bhi chahiye thi,
+          par ab destination mil chuka tha, isliye pace thoda relaxed tha.
+        </p>
+        <p>
+          Lagbhag shaam 7 baje wapas neeche aa gaye. Bike uthayi aur Kalyan ki taraf nikal pade. Saturday subah 7 baje ghar se nikle the, ab Sunday raat ho chuki thi.
+          Kalyan pahunchte-pahunchte kareeb raat ke 12 baj gaye.
+        </p>
+        <p>
+          Dono din mein 100-100+ km ki bike ride, Nalichi Vaat ki challenging climb, camping, stars, temple, Kedareshwar Cave, pahad ki chai aur phir raat tak ghar wapas.
+          Thakaan bahut thi, lekin dil bilkul halka tha. Shayad isi feeling ke liye main baar-baar pahadon mein chala jaata hoon.
+        </p>
+        <p style="color:var(--cream);font-weight:700">Harishchandragad — 3 visits, 3 routes, 3 alag kahaniyan. Aur ye wali kahani mere liye unmein se ek khaas kahani rahegi.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="place place-feature">
+    <div class="place-grid">
+      <div class="place-head">
+        <div>
+          <div class="place-num">02 / "KYUN LAYA MUJHE?" SE "AGLA PAHAD KAUNSA HAI?" TAK</div>
+          <h3>Kalsubai Peak</h3>
+        </div>
+        <div><span class="tag">Highest Peak of Maharashtra</span><span class="tag">Night Trek</span><span class="tag">Jigar &amp; RJ</span><span class="tag">5,400 ft</span></div>
+      </div>
+      <div class="place-body">
+        <p>
+          Kalsubai ka plan <strong style="color:var(--cream)">Jigar</strong>, RJ aur hum chaaron ne milkar banaya tha. Ek din baat nikli ki weekend par Kalsubai chalte hain,
+          plan fix hua aur phir weekend ka wait shuru.
+        </p>
+        <p>
+          Weekend aaya aur hum nikal pade. Raat ke kareeb 12 baje hum Kasara Station pahunch gaye. Wahan se jeep li aur Bari Village ki taraf nikal gaye,
+          jo Kasara se lagbhag 50 km door tha. Raat ka safar tha, isliye Bari pahunchkar humne thodi der aaram kiya. Lekin asli adventure abhi baaki tha.
+        </p>
+        <p><strong style="color:var(--cream)">3:00 AM — Trek Begins.</strong>
+          Kareeb 3 baje humne trek start kiya. Kalsubai Peak Maharashtra ki sabse unchi choti hai, jiski height lagbhag 5,400–5,500 feet hai.
+          Hamare liye ye sirf ek aur weekend plan nahi tha — shaayad mere doston ka ye pehla aur sabse lamba proper mountain trek tha.
+        </p>
+
+
+        <p>
+          Aur trek shuru hone ke kuch hi der baad iska realization bhi hone laga. Jigar ka haal alag hi tha. Kabhi bolta — “Kyu laya mujhe?”,
+          “Wapas chalte hain,” “Ab main kabhi nahi aaunga.” Aur pata nahi kya-kya. Main soch raha tha ki bhai, abhi toh trek shuru hua hai!
+        </p>
+        <p>
+          Lekin hum chaaron kisi tarah chalte rahe. Kabhi rukte, kabhi saans lete, kabhi ek-doosre ka wait karte aur kabhi bas ye sochte ki ab aur kitna upar jaana hai.
+          Thakte-haarte, rukte-chalte aakhir woh moment aa hi gaya.
+        </p>
+
+        <div class="quote">
+          <p>“WE MADE IT. Hum Kalsubai ki choti par pahunch chuke the.”</p>
+        </div>
+
+        <p>
+          Kuch hi der baad subah hone lagi. Suraj nikalne ka waqt tha, lekin peak par fog tha, isliye sunrise ka view completely clear nahi tha.
+          Lekin honestly, usse koi farq nahi pada — kyunki jo view fog ke beech se dikh raha tha, usne poori thakaan bhula di. Saamne sirf pahad hi pahad the.
+        </p>
+        <p>
+          Jitni der se hum chadh rahe the, uska reason ab saamne tha. Kuch der pehle jo Jigar trek ko gaaliyan de raha tha, wahi ab us view ko dekh raha tha.
+          Humne wahan bahut saari pictures click ki — choti par khade hokar aas-paas ke mountains ko dekhna, ek-doosre ke saath photos lena aur bas kuch der chup rehkar
+          us moment ko feel karna — ye sab hum chaaron ke liye ek aisi memory ban gayi jo shaayad bahut saalon tak yaad rahegi.
+        </p>
+        <p>
+          Wahi humne breakfast kiya aur chai pi. Itni thakaan ke baad pahad ki choti par baithkar chai peena — simple tha, lekin us moment mein wahi sabse special cheez thi.
+        </p>
+
+        <p><strong style="color:var(--cream)">Ab Neeche Utarna Tha.</strong>
+          Kuch der baad humne descent start kiya. Ab body already completely tired thi. Aate-aate dhoop bhi nikal chuki thi, aur jo climb raat ke andhere mein
+          manageable lag rahi thi, wahi ab dhoop mein aur tough lag rahi thi. Kisi tarah hum neeche pahunch gaye.
+        </p>
+        <p>
+          Neeche aakar lunch kiya aur thodi der aaram kiya. Us waqt ek ajeeb sa satisfaction tha — aisa lag raha tha jaise humne koi bahut bada kaam kar dikhaya ho.
+          Sach mein, feeling kuch aisi thi — “Thak gaye hain, lekin kar toh dikhaya.” Aur shaayad isi feeling ke liye main baar-baar pahadon mein jaata hoon.
+        </p>
+
+        <p><strong style="color:var(--cream)">“Ab Doosra Pahad Kaunsa Hai?”</strong>
+          Wapas aate waqt sabse funny moment tab aaya jab Jigar ne poocha — “Ab doosra pahad kaunsa chadhna hai?”
+          Jis bande ne kuch ghante pehle bola tha “ab main kabhi trek nahi karunga”, ab wahi next mountain ke baare mein pooch raha tha.
+          Shaayad us waqt tak use thoda-thoda samajh aa gaya tha ki ye sirf faltugiri ya timepass nahi hai.
+        </p>
+        <p>
+          Pahad par pahunchkar jo feeling milti hai, woh office se ghar aur ghar se office ki routine mein mil hi nahi sakti. Roz ki bhaag-daud, traffic,
+          office ka pressure, problems, responsibilities — sab kuch itna aas-paas hota hai ki kabhi-kabhi khud ke liye sochne ki jagah hi nahi bachi hoti.
+          Lekin jab pahad par pahunchte ho, kuch der ke liye sab peeche reh jaata hai. Na office yaad aata hai, na Monday ka pressure, na kal kya karna hai uski tension.
+          Bas saamne pahad hote hain, hawa hoti hai aur tum khud hote ho.
+        </p>
+
+        <div class="quote">
+          <p>“Shehron mein log milte hain, pahadon mein khud se mulaqat hoti hai.”</p>
+        </div>
+
+        <p>
+          Kalsubai ka trek hum chaaron ke liye sirf ek completed trek nahi tha. Ye un safaron mein se ek tha jahan hum thake bhi, hase bhi, pareshan bhi hue,
+          gaaliyan bhi suni aur aakhir mein khush hokar wapas aaye. Aur sabse achhi baat? Plan complete hua — without fail.
+        </p>
+        <p style="color:var(--cream);font-weight:700">
+          “एक दिन सब खत्म होगा, कहानी क्या होगी pta nhi, इसलिए जब भी मौका मिले, घूम लो।”
+        </p>
+        <p>
+          Kalsubai se wapas aate waqt shaayad hum sab physically exhausted the, lekin andar se ek alag hi satisfaction tha.
+          Ek aur pahad chadh liya tha. Ek aur weekend jee liya tha. Aur ek aur memory zindagi ke naam kar di thi.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="place place-feature">
+    <div class="place-grid">
+      <div class="place-head">
+        <div>
+          <div class="place-num">03 / 117 SEEDHIYAN AUR CHAAR DOSTON KI EK YAAD</div>
+          <h3>Harihar Fort</h3>
+        </div>
+        <div><span class="tag">117 Rock-Cut Steps</span><span class="tag">Jigar, RJ &amp; Vikas</span><span class="tag">Night Trek</span><span class="tag">80° Climb</span></div>
+      </div>
+      <div class="place-body">
+        <p>
+          Monday se Friday tak wahi roz ka routine — job, office, ghar aur phir agle din wahi sab. Lekin jaise hi weekend aata hai, hamare dimag mein kuch aur hi chalta hai.
+          Is baar maine, <strong style="color:var(--cream)">Jigar, RJ, Vikas</strong> aur ek aur dost ne decide kiya ki Harihar Fort chalte hain.
+        </p>
+        <p>
+          Saturday ki shaam hum nikal pade. Kasara Station pahunche aur wahan se jeep lekar trekking ke base point ki taraf nikal gaye.
+          Raat ke kareeb 2 baje hum base point par pahunch chuke the.
+        </p>
+        <p>
+          Us waqt ka scene bhi alag hi tha. Jab poori duniya so rahi hoti hai, tab hum chaar log raat ke 2 baje kisi pahad ke base par khade the.
+          Kabhi-kabhi mann mein khud hi sawaal aata tha — "kya faltugiri kar rahe hain hum?" Phir khud hi hansi aati thi aur lagta tha —
+          "chalo bhai, ab aa hi gaye hain toh trek karte hain." Aur humne trek shuru kar diya.
+        </p>
+
+
+        <p>
+          Shuruaat aasaan thi. Harihar Fort ka trek shuruaat mein kaafi normal lagta hai — fields aur forest ke beech steady walk hoti hai.
+          Raat ka samay tha, isliye chaaron taraf andhera tha aur hamari duniya bas torch ki roshni tak seemit thi.
+          Chalte rahe, baatein karte rahe, beech-beech mein rukte rahe. Lekin dheere-dheere jaise-jaise upar badhe, trek ka asli challenge saamne aane laga.
+        </p>
+
+        <p><strong style="color:var(--cream)">Phir aaye woh 117 STEPS.</strong>
+          Fort ke final section mein pahunchte hi poora scene badal jaata hai. Saamne 117 near-vertical rock-cut steps, jo lagbhag 80-degree angle par hain.
+          Neeche dekho toh height ka ehsaas hota hai. Upar dekho toh lagta hai — "abhi aur upar jaana hai?"
+        </p>
+        <p>
+          Ek-ek step carefully climb karna padta hai. Haathon ka sahara lete hue, balance banate hue aur beech-beech mein rukkar saans lete hue hum upar badhte rahe.
+          Shuruaat mein jo trek normal lag raha tha, ab wahi poori tarah adventurous ho chuka tha. Aur yahi woh jagah hai jahan samajh aata hai ki
+          Harihar Fort ko Maharashtra ke adventurous treks mein itna special kyun maana jaata hai.
+        </p>
+
+        <div class="quote">
+          <p>“Neeche ka safar ek normal trek tha — lekin woh 117 steps, wahi Harihar ki asli kahani hain.”</p>
+        </div>
+
+        <p>
+          Thakte-haarte, rukte-aaram karte aur ek-doosre ka intezaar karte hue aakhirkar kareeb 2.5–3 ghante ki mehnat ke baad hum fort ki sabse oonchi choti tak pahunch gaye.
+        </p>
+        <p style="color:var(--cream);font-weight:700">WE MADE IT.</p>
+        <p>
+          Upar pahunchte hi sabse pehle thoda aaram kiya. Body poori tarah thak chuki thi, lekin mann mein ek alag hi excitement thi.
+          Phir shuru hui hamari asli masti — dher saari photos, jokes, baatein aur khoob saari masti.
+          Jis trek ke dauraan beech-beech mein lag raha tha ki ab bas bahut ho gaya, usi jagah pahunchkar aisa lag raha tha ki thoda aur ruken —
+          kyunki kuch jagahon par pahunchne ke baad thakaan se zyada khushi mehsoos hoti hai.
+        </p>
+        <p>
+          Wahin baithkar humne aas-paas ka view dekha aur us poore moment ko enjoy kiya. Chaar dost, ek pahad aur ek aisi memory jise us waqt shaayad hum itna
+          seriously nahi le rahe the. Lekin aaj peeche mudkar dekhta hoon toh lagta hai — ye moments hi toh asli cheezein hain.
+        </p>
+        <p>
+          Kuch der baad humne descent shuru kiya. Ab sharir pehle se hi thaka hua tha, isliye neeche utarna bhi aasaan nahi tha.
+          Lekin kisi tarah, rukte-chalte, baatein karte aur ek-doosre ka saath dete hue hum neeche aa gaye. Neeche pahunchkar lunch kiya, thodi der aaram kiya
+          aur phir ghar ke liye nikal pade.
+        </p>
+
+        <p><strong style="color:var(--cream)">Shaayad ek din...</strong>
+          Ek samay aisa aayega jab hume yaad nahi rahega ki is trek mein kitna paisa kharch hua tha. Ye bhi shaayad yaad nahi rahega ki kitni mehnat lagi thi,
+          kitni der chale the ya kitni baar raaste mein ruke the. Lekin — woh din yaad rahega. Woh pahad yaad rahega. Woh 117 seedhiyan yaad rahengi.
+          Aur sabse zyada — un dosto ka saath yaad rahega.
+        </p>
+        <p>
+          Kabhi bhavishya mein agar hum mein se koi in photos ko dobara dekhega, toh shaayad photo se zyada us din ki poori kahani yaad aayegi.
+          Kaun saath tha... kis baat par hanse the... kis jagah thak gaye the... aur kis moment par laga tha — "yaar, ye toh kar dikhaya humne."
+        </p>
+        <p>
+          Main in memories ko bahut sambhal kar rakhna chahta hoon, kyunki zindagi aage kahan le jayegi, kise pata. Aaj jo dost saath hain, zaroori nahi ki
+          hamesha usi shehar mein hon. Future mein kaun kahan hoga, pata nahi. Lekin meri ek ichha zaroor hai — main nayi-nayi jagahon par jaana chahta hoon,
+          naye pahad chadhna chahta hoon, har baar koi nayi kahani banana chahta hoon. Kabhi purane dosto ke saath, kabhi naye dosto ke saath.
+          Lekin purane dosto ka saath hamesha chahta hoon.
+        </p>
+
+        <div class="quote">
+          <p>“Zindagi mein har musafir kisi wajah se milta hai. Koi thodi der ke liye, koi zindagi bhar ke liye.”</p>
+        </div>
+
+        <p>
+          Aur shaayad hum bhi ek-doosre ki zindagi ke wahi musafir hain — jo kab mile, kaise mile, pata nahi. Lekin kuch safar aur kuch log zindagi bhar yaad reh jaate hain.
+        </p>
+        <p style="color:var(--cream);font-weight:700">
+          Toh — milte hain phir kisi doosre pahad par, ek nayi jagah ke saath, ek nayi kahani ke saath. Shaayad naye dost honge, shaayad random log honge —
+          ya shaayad wahi purane pagal dost. Tab tak... BYE BYE. 👋⛰️
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="place place-feature">
+    <div class="place-grid">
+      <div class="place-head">
+        <div>
+          <div class="place-num">04 / SHAAYAD SABSE ZYADA TASVEERON WALA SAFAR</div>
+          <h3>Kalawanti Durg</h3>
+        </div>
+        <div><span class="tag">Fort</span><span class="tag">Trek</span><span class="tag">Views</span><span class="tag">600+ Photos</span><span class="tag">Dosti</span></div>
+      </div>
+      <div class="place-body">
+        <p>
+          Kalawanti Durg ka ye safar mere liye baaki treks se thoda zyada special tha. Is baar main apne dosto ke saath tha —
+          <strong style="color:var(--cream)">Jigar</strong>, RJ aur ek aur dost — hum kul chaar log the.
+        </p>
+        <p>
+          Humne Saturday shaam nikalne ka plan banaya. Weekend shuru hote hi bags uthaye aur nikal pade.
+          Raat ka safar apne aap mein mazedaar tha, kyunki pata tha ki agla pura din pahadon ke naam hone waala hai.
+        </p>
+
+
+        <p>
+          Agli subah Sunday ko humne Kalawanti Durg explore karna shuru kiya. Aur sach kahoon to, mujhe yahan sabse zyada maza aaya.
+          Jagah itni khoobsurat thi ki aisa lagta tha har do minute mein mobile nikalo aur ek photo click karo.
+        </p>
+
+        <div class="quote">
+          <p>“Humne shaayad 600–700 photos tak click kar dali hongi. Bas har angle accha lag raha tha.”</p>
+        </div>
+
+        <p>
+          Jigar, RJ aur hum charon ne pura durg explore kiya. Raaste mein masti, baatein, photos aur wo khule pahadon waala view —
+          pura din kab nikal gaya, pata hi nahi chala.
+        </p>
+        <p>
+          Kabhi-kabhi koi jagah isliye yaad nahi rehti ki wahan humne kya dekha tha, balki isliye yaad rehti hai ki wahan humne kitna enjoy kiya tha.
+          Kalawanti Durg mere liye bilkul waisi hi jagah ban gayi.
+        </p>
+        <p>
+          Pura durg ghoomne ke baad hum neeche utre aur wahin baithkar khaana khaya. Sharir thak chuka tha, lekin chehre par satisfaction tha
+          ki pura din sahi jagah spend kiya. Phir Sunday ki shaam tak hum wapas ghar ke liye nikal pade.
+        </p>
+        <p>
+          Weekend khatam ho raha tha, lekin saath mein kuch sau photos, dosto ke saath bitaya hua pura din aur dher saari chhoti-chhoti memories thi.
+        </p>
+        <p style="color:var(--cream);font-weight:700">
+          Kalawanti Durg — ek aisa safar jahan pahad dekhne se zyada, har pal ko camera mein qaid karne ka mann kar raha tha.
+          Aur shaayad isi wajah se aaj bhi jab un 600–700 photos mein se koi random photo saamne aa jaati hai, to pura wo Sunday phir se yaad aa jaata hai.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="place place-feature">
+    <div class="place-grid">
+      <div class="place-head">
+        <div>
+          <div class="place-num">05 / TEEN PAHAD, EK SAFAR AUR KHUD SE LADNE KI KAHANI</div>
+          <h3>AMK — Alang, Madan &amp; Kulang</h3>
+        </div>
+        <div><span class="tag">Technical Climb</span><span class="tag">Ropes &amp; Harness</span><span class="tag">Night Trek</span><span class="tag">Camping</span><span class="tag">RJ</span><span class="tag">4,200+ ft</span></div>
+      </div>
+      <div class="place-body">
+        <p>
+          AMK — Alang, Madan aur Kulang. Mere kiye hue treks mein shaayad sabse zyada thrilling, difficult aur physically demanding treks mein se ek.
+          Long trek, steep climbs, rock patches aur technical sections ki wajah se ye normal trek se kaafi zyada difficult hai. Isme ek ke baad ek 3 major
+          mountain sections tackle karne padte hain — thakaan ke saath mental strength bhi test hoti hai.
+        </p>
+        <p>
+          Is baar mere saath sirf <strong style="color:var(--cream)">RJ</strong> thi. Humne ek trekking group — GT Adventure — ke saath jaane ka plan banaya tha.
+          Shaayad January ka samay tha. Group mein kareeb 50 log the aur humein pata tha ki ye koi normal weekend trek nahi hone waala.
+        </p>
+        <p><strong style="color:var(--cream)">Raat ke 4 baje — safar shuru.</strong>
+          Raat ke kareeb 4 baje humne breakfast kiya aur trek shuru kar diya. Chaaron taraf andhera tha. Itne saare log saath the, lekin us darkness mein
+          har koi apni torch ki roshni ke sahare aage badh raha tha. Aur tabhi trek ne pehli pareeksha le li — ek samay aisa aaya jab hum raasta bhatak gaye.
+          Group aage nikal chuka tha aur hum bhi unsure the ki sahi trail kaunsa hai. Kaafi der bhatakne ke baad aakhirkar sahi raasta mil gaya, lekin tab tak
+          group waale kaafi aage nikal chuke the. Unhein dhoondne ke liye lagbhag bhaagna pada. Aakhirkar door se group dikhayi diya — tab jaake saans mein saans aayi.
+        </p>
+
+
+        <p><strong style="color:var(--cream)">Alang — pehla padaav.</strong>
+          Subah hote-hote hum Alang Fort ke base tak pahunch chuke the. Yahan se aage ka climb kaafi technical tha — lagbhag 50–60 feet ki steep climbing
+          ke baad hum fort ke upar pahunche. Upar pahunchkar sabse pehle relief mila, phir shuru hua exploration aur photography ka daur. Pura fort explore kiya,
+          khoob saari pictures click ki aur us jagah ki purani sanrachnaon ko dekha. Technical climb ke baad upar baithkar aas-paas ka view dekhna alag hi
+          satisfaction de raha tha. Phir neeche utre aur lunch kiya, thodi der aaram kiya — lekin asli challenge abhi baaki tha. Alang ke baad Madan.
+        </p>
+
+        <p><strong style="color:var(--cream)">Alang → Madan — manzil se zyada safar khoobsurat tha.</strong>
+          Alang se Madan ki taraf jaane waala trail shaayad is poore trek ke sabse interesting hisso mein se ek tha. Kahin narrow trail, kahin steep sections
+          aur kahin aise raaste jahan har kadam sochkar rakhna pad raha tha. Shaam hone waali thi jab hum Madan Fort ke climb ke paas pahunche. Humne shuruaat
+          se hi harness pehna hua tha, kyunki aage ka section kaafi technical tha.
+        </p>
+        <p>
+          Aur phir shuru hui asli climbing. Kuch jagah neeche dekhte hi dar lagta tha. Jahan zyada risky sections the, wahan ropes lagi hui thi aur hum
+          carabiner ke through rope se attached hokar aage badh rahe the. Dar kaafi lag raha tha, lekin maza usse bhi zyada aa raha tha — trek guide aur
+          technical team saath thi, isliye difficult sections comparatively manageable ho rahe the. Dheere-dheere hum aakhirkar Madan Fort ke upar pahunch gaye.
+        </p>
+
+        <p><strong style="color:var(--cream)">Madan — dar ke baad mila sabse khoobsurat sukoon.</strong>
+          Madan Fort ke upar caves bhi hain, lekin us samay sabse zyada attention kisi cave ne nahi, balki saamne ho rahe sunset ne kheencha. Pura aasman badal
+          raha tha aur saamne Sahyadri ki mountains ekdum cinematic lag rahi thi. Itne ghante ki climbing, dar, thakaan aur technical sections ke baad wahan
+          baithkar sunset dekhna — achanak sab kuch shaant ho gaya. Koi jaldi nahi thi, koi office nahi tha, koi daily routine nahi tha. Bas pahad aur sunset.
+        </p>
+
+        <div class="quote">
+          <p>“Itne ghanton ki climbing aur dar ke baad wahan baithkar sunset dekhna — achanak sab kuch shaant ho gaya.”</p>
+        </div>
+
+        <p>
+          Thodi der baad andhera hone laga. Humne wahin tent lagaya, dinner kiya aur sharir itna thak chuka tha ki neend aane lagi — lekin baaki log full mood
+          mein the. Kuch log antakshari khel rahe the, baatein kar rahe the, has rahe the. Bahar kaafi thand thi, lekin ghar se laaye hue warm clothes us raat
+          sach mein kaam aaye.
+        </p>
+        <p>
+          Subah hui aur Madan ne phir ek naya surprise diya — sunrise, ekdum next level. Raat ki thakaan ke bawajood subah ka wo view dekhte hi energy wapas
+          aa gayi. Phir se khoob saari pictures click ki, breakfast kiya aur ab time tha Kulang ke liye nikalne ka.
+        </p>
+        <p>
+          Madan ka descent bhi aasaan nahi tha — sach kahoon to Madan ka section mujhe poore trek mein sabse zyada thrilling aur difficult laga. Ropes ke
+          through neeche utarna tha. Technical team saath thi aur guides har section mein help kar rahe the, isliye kaafi aasaani ho rahi thi — phir bhi
+          dar to lag hi raha tha. Ek-ek karke neeche utre, aur neeche pahunchte hi saamne tha agla target — Kulang.
+        </p>
+
+        <p><strong style="color:var(--cream)">Kulang — jab sharir ne kaha "bas kar bhai".</strong>
+          Ab tak body lagbhag jawaab de chuki thi. Alang ho chuka tha, Madan ho chuka tha, raat ki camping ho chuki thi, subah sunrise bhi dekh liya tha —
+          lekin Kulang abhi baaki tha. Chadhai shuru ki to sharir saaf keh raha tha, "bhai, ab nahi ho raha." Mann kar raha tha ki bas yahin se return kar
+          lete hain, lekin andar se ek awaaz aa rahi thi — "AMK shuru kiya hai to pura karke hi jaana hai." Adhoora chhodkar wapas jaane ka mann nahi maan
+          raha tha, isliye thake hue sharir ko kisi tarah samjhaya aur Kulang ki taraf badhte rahe. Dheere-dheere, rukte hue, thakte hue — aur aakhirkar
+          Kulang Fort bhi chadh gaye.
+        </p>
+        <p>
+          Kulang ka climb baaki do forts ki tulna mein comparatively normal tha, lekin us samay tak hamari body itni exhausted thi ki normal climb bhi
+          difficult lag rahi thi. AMK ke teeno forts ki height roughly 4,200–4,500 feet ke aas-paas hai, aur teeno ko ek hi expedition mein complete karna
+          apne aap mein ek alag achievement jaisa mehsoos ho raha tha.
+        </p>
+        <p>
+          Upar pahunchkar humne khoob saari pictures click ki. Lekin Kulang mein ek aur cheez ne mera dhyaan kheencha — history. Purane samay ke yuddhon ke
+          nishaan, tooti hui deewarein aur fort ki structures dekhkar andaza lag raha tha ki kabhi yahan kitna kuch hua hoga. Kuch der wahan explore kiya aur
+          phir jaldi neeche utarna shuru kiya — ab sach mein bhookh lag chuki thi.
+        </p>
+
+        <p><strong style="color:var(--cream)">Teen pahad poore hue.</strong>
+          Base point tak pahunchte-pahunchte hum poori tarah thak chuke the, body mein energy lagbhag khatam thi. Lekin jaise hi neeche pahunche aur khana
+          saamne aaya, sabse pehle to non-veg lunch kiya. Uske baad Kasara Station pahunche aur wahan se ghar ke liye nikal pade.
+        </p>
+        <p>
+          Raaste mein baithkar dheere-dheere realization ho raha tha — "bhai, humne sach mein AMK kar liya." Itna long trek, teen forts, technical climbing,
+          ropes, night trek, camping, sunset, sunrise, aur beech mein kho jaana bhi. Body par kuch chhoti-moti injuries bhi hui thi, lekin uska koi dukh nahi
+          tha — kyunki is trek ne sirf thakaya nahi tha, isne kuch diya bhi tha.
+        </p>
+        <p>
+          Ghar ke liye nikalte samay maine RJ ko thanks kaha — is poore trek mein saath dene ke liye. Kyunki kuch journeys akele poori ki ja sakti hain,
+          lekin kuch journeys mein kisi ka saath hona zaroori hota hai.
+        </p>
+        <p>
+          AMK mere liye sirf Alang, Madan aur Kulang ke teen forts nahi the. Ye teen alag-alag challenges the — pehle ne daraya, doosre ne himmat test ki,
+          teesre ne sharir ki aakhri energy nikaal di. Lekin teeno poore karne ke baad ek hi feeling thi —
+        </p>
+        <p style="color:var(--cream);font-weight:700">
+          "Life ke plans bade nahi, simple hone chahiye — kyunki zindagi plan karne se zyada, jeene ke liye hai."
+        </p>
+        <p>
+          Aur shaayad yahi wajah hai ki main baar-baar pahadon ki taraf chala jaata hoon. Kyunki wahan jaakar samajh aata hai ki life sirf survive karne
+          ke liye nahi hai — kabhi-kabhi use feel karna bhi zaroori hai.
+        </p>
+        <p>
+          AMK — teen pahad, ek lamba safar, bahut saara dar, usse bhi zyada maza... aur memory. Aise karke ye trek ki memory bhi meri life ke page save
+          ho gayi. To milte hain phir, kisi naye pahad pe.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="place place-feature">
+    <div class="place-grid">
+      <div class="place-head">
+        <div>
+          <div class="place-num">06 / BAARISH, MAHADEV AUR TEEN YAAR</div>
+          <h3>Malanggad</h3>
+        </div>
+        <div><span class="tag">Trek</span><span class="tag">Rain</span><span class="tag">Shiv Mandir</span><span class="tag">Jigar</span></div>
+      </div>
+      <div class="place-body">
+        <p>
+          Sunday ki subah thi. Main, <strong style="color:var(--cream)">Jigar</strong> aur mera saala — hum teeno ne decide kiya ki aaj Malang Gad chalte hain.
+          Baarish ka season tha, isliye raincoat saath mein tha.
+        </p>
+        <p>
+          Safar shuru kiya aur jaise-jaise Malang Gad ke paas pahunchte gaye, baarish aur tez hoti gayi. Pehle socha tha ki raincoat pehenkar trek karenge —
+          lekin baarish aur saamne ke views dekhkar mann hi badal gaya. Humne socha, aaj bheegte hain!
+        </p>
+
+
+        <p>
+          Aur phir kya tha — raincoat side mein rakha aur baarish mein hi trek shuru kar diya. Thandi hawa, baarish ki boondein aur aas-paas ka greenery waala
+          view — us moment mein trek se zyada baarish ka maza aa raha tha.
+        </p>
+        <p>
+          Lagbhag 30 minute ki seedhiyon aur chadhai ke baad hum ek aisi jagah pahunche, jahan Mahadev ka Shivling tha. Baarish ke beech Mahadev ke darshan
+          karna apne aap mein ek alag hi feeling thi. Humne wahan thodi der rukkar darshan kiye, photos liye aur us moment ko yaadon mein capture kar liya.
+        </p>
+
+        <div class="quote">
+          <p>“Koi bada plan nahi tha, koi special preparation nahi thi — bas Sunday ki ek chhoti si outing thi. Lekin kabhi-kabhi aisi hi chhoti trips sabse badi memories de jaati hain.”</p>
+        </div>
+
+        <p>
+          Dopahar tak hum wapas neeche aa chuke the. Kapde poore bheeg chuke the, lekin chehre par satisfaction tha.
+        </p>
+        <p style="color:var(--cream);font-weight:700">
+          Malang Gad ka ye trek sirf ek trek nahi tha — ye baarish mein bheegte hue Mahadev ke darshan aur teen logon ki ek khoobsurat yaad ban gaya.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="place place-feature">
+    <div class="place-grid">
+      <div class="place-head">
+        <div>
+          <div class="place-num">07 / BAARISH, ANJAAN LOG AUR EK YAADGAAR SAFAR</div>
+          <h3>Ratangad</h3>
+        </div>
+        <div><span class="tag">Fort</span><span class="tag">Sahyadri</span><span class="tag">Night Trek</span><span class="tag">Rain</span><span class="tag">Group Trip</span></div>
+      </div>
+      <div class="place-body">
+        <p>
+          Ratangad ka plan thoda alag tha. Is baar hum 10 log the, lekin interesting baat ye thi ki un 10 mein se main sirf Pravin ko jaanta tha.
+          Baaki sab mere liye bilkul naye log the.
+        </p>
+        <p>
+          Saturday ki raat hum nikle. Kasara se ek gaadi book ki thi aur baarish ka season tha. Raat ka safar, baarish ka mausam aur aage ek unknown trek —
+          excitement bhi thi aur thodi curiosity bhi ki pata nahi ye trip kaisa hone wala hai.
+        </p>
+        <p>
+          Raat kareeb 2 baje hum Ratanwadi, trek ke base point par pahunch gaye. Wahan se trek start kiya.
+        </p>
+
+
+        <p>
+          Kuch hi der mein baarish bhi shuru ho gayi. Achha hua ki hum raincoats pehle se carry karke laaye the. Raincoat nikala, bag cover kiya
+          aur phir baarish ke beech trek continue kar diya.
+        </p>
+        <p>
+          Baarish mein trek karna sach mein alag hi level ka experience tha. Raat ka andhera, geeli mitti, slippery rocks, baarish ki awaaz aur torch ki roshni mein
+          bas saamne ka trail dikh raha tha. Normal trek se bilkul alag feeling thi. Har step sambhal kar rakhna pad raha tha, lekin usi struggle mein ek alag hi maza tha.
+        </p>
+        <p>
+          Lagbhag 2.5–3 ghante trek karne ke baad hum upar pahunch gaye.
+        </p>
+        <p>
+          Upar pahunchkar body completely thak chuki thi, isliye kuch der humne patharon par hi letkar aaram kiya. Raat ka woh silence aur trek ki thakaan —
+          bas aankhein band karne ka mann kar raha tha.
+        </p>
+        <p>
+          Phir dheere-dheere subah hone lagi. Subah hote hi sabse pehle bhookh lagi. Ghar se jo khana lekar aaye the, wahi nikala aur sabne milkar khaya.
+        </p>
+        <p>
+          Pet bharne ke baad humne Ratangad ko explore karna start kiya. Aur subah ki roshni mein jo view saamne aaya, woh raat ke andhere se bilkul opposite tha.
+        </p>
+        <p>
+          Pura pahad hara-bhara tha. Har taraf greenery ke beech yellow aur purple flowers khile hue the. Baarish ke baad pahad aur bhi fresh lag raha tha.
+          Jahan raat ko sirf andhera aur torch ki roshni dikh rahi thi, wahi subah har taraf colours hi colours the.
+        </p>
+
+        <div class="quote">
+          <p>“Humne bahut saari pictures click ki. Kuch jagah camera mein capture ho gayi, lekin kuch views aise the jo bas aankhon mein hi achhe lag rahe the.”</p>
+        </div>
+
+        <p><strong style="color:var(--cream)">Amruteshwar Temple.</strong>
+          Ratangad se neeche utarne ke baad hum Ratanwadi ke ancient Amruteshwar Temple gaye. Ye ek bahut purana Shiva temple hai, jise 9th century CE mein
+          Shilahara dynasty ke period se joda jaata hai. Temple ki stone architecture aur Hemadpanthi-style carvings dekhne layak hain. Wahan humne darshan kiye
+          aur thodi der rukkar us jagah ko feel kiya. Itni raat se trek, baarish, pahad, flowers aur ab ye ancient temple — trip dheere-dheere ek complete experience
+          ban chuka tha.
+        </p>
+        <p><strong style="color:var(--cream)">Vasundhara Waterfall.</strong>
+          Lekin journey abhi khatam nahi hui thi. Wapas aate waqt hum Vasundhara Waterfall bhi gaye. Baarish ka season tha, isliye waterfall ka atmosphere
+          ekdum alive tha. Thakaan already thi, lekin waterfall dekhte hi energy wapas aa gayi. Wahan bhi khoob enjoy kiya, photos li aur kuch waqt bas
+          nature ke saath spend kiya.
+        </p>
+        <p>
+          Uske baad hum Kasara ki taraf nikle. Kasara station pahunchte-pahunchte body thak chuki thi. Raat se trek, baarish, walking, exploring aur phir
+          poora return journey. Thakaan bahut thi, lekin memories usse kahin zyada thi.
+        </p>
+        <p>
+          Sabse interesting baat ye thi ki trip start karte waqt 10 logon mein se main sirf Pravin ko jaanta tha. Lekin aise safar mein kab naye log
+          apne jaise lagne lagte hain, pata hi nahi chalta.
+        </p>
+        <p style="color:var(--cream);font-weight:700">
+          Ratangad ne mujhe sirf ek trek nahi diya. Ek rainy night, ek challenging climb, unknown people, green mountains, colourful flowers,
+          ancient temple, waterfall aur bahut saari memories — sab ek hi journey mein mil gaya.
+        </p>
+      </div>
+    </div>
+  </div>
+
+    <div class="place place-feature">
+    <div class="place-grid">
+      <div class="place-head">
+        <div>
+          <div class="place-num">08 / जब कोई साथ नहीं मिला, तो खुद ही निकल पड़ा</div>
+          <h3>Hampi</h3>
+        </div>
+        <div><span class="tag">Solo</span><span class="tag">History</span><span class="tag">Vijayanagara Empire</span><span class="tag">Explore</span></div>
+      </div>
+      <div class="place-body">
+        <p>2025 खत्म होने में बस एक-दो दिन बाकी थे। Office से 1 से 4 January 2026 तक छुट्टी थी। बाकी लोगों के लिए ये बस New Year की छुट्टियाँ थीं, लेकिन मेरे दिमाग में एक ही चीज चल रही थी— "कहीं घूमने जाना है।"</p>
+        <p>दोस्तों से बात की, plan बनाने की कोशिश की, लेकिन कोई साथ जाने वाला मिला ही नहीं। मन में एक hesitation भी थी—अकेले कैसे जाऊँगा? Solo trip का idea अच्छा तो लग रहा था, लेकिन दिल पूरी तरह तैयार नहीं था।</p>
+        <p>फिर 2025 के आखिरी दिनों में एक friend ने suggest किया— "Hampi घूमने की अच्छी जगह है।" बस फिर क्या था। जब कोई साथ नहीं मिला तो मैंने decide किया— किसी का इंतज़ार नहीं करूँगा। अकेला ही जाऊँगा। मन अभी भी पूरी तरह नहीं हो रहा था, लेकिन घूमना था। एक नई जगह देखनी थी। और शायद इसी बार पहली बार समझ आया कि हर सफर के लिए किसी साथी का होना जरूरी नहीं होता।</p>
+
+        <p><strong style="color:var(--cream)">31 DECEMBER 2025 — एक नया साल, एक नया सफर।</strong>
+        2025 का आखिरी दिन था। Office से शाम को घर आया। सामान तैयार किया और रात करीब 10 बजे Kalyan से Hampi के लिए train पकड़ ली। Kalyan से Hampi की दूरी 800+ km थी और train से लगभग 14 घंटे का सफर था। जब बाकी लोग New Year की planning कर रहे थे, मैं train में बैठकर एक अनजान शहर की तरफ जा रहा था। अजीब feeling थी। नया साल… नई जगह… और मैं अकेला। लेकिन अंदर कहीं excitement भी थी कि पता नहीं ये journey मुझे क्या देने वाली है।</p>
+
+        <p><strong style="color:var(--cream)">1 JANUARY 2026 — HAMPI.</strong>
+        अगले दिन, यानी New Year के दिन, करीब 1 बजे मैं Hospete Junction पहुँचा। Hospete से Hampi करीब 30 km दूर था। वहाँ से आगे का सफर करते-करते करीब 3 बजे Hampi पहुँच गया। इतनी लंबी journey के बाद सबसे पहले खाना खाया। फिर Virupaksha Temple के पास ही एक room तुरंत book किया। सामान रखा, थोड़ी देर आराम किया, नहाया और फिर निकल पड़ा— Hampi को अपनी आँखों से देखने।</p>
+
+        <p><strong style="color:var(--cream)">HAMPI — पत्थरों में बसी एक पूरी दुनिया।</strong>
+        Hampi सिर्फ घूमने की जगह नहीं है। ये कभी Vijayanagara Empire की राजधानी हुआ करती थी। 14वीं से 16वीं शताब्दी के दौरान ये दक्षिण भारत के सबसे समृद्ध और शक्तिशाली शहरों में से एक था। आज जहाँ ruins दिखाई देते हैं, कभी वहाँ विशाल मंदिर, राजमहल, बाजार, जल संरचनाएँ और पूरा एक विकसित शहर हुआ करता था। और शायद Hampi की सबसे खूबसूरत बात यही है— यहाँ history किसी museum के अंदर बंद नहीं है। History यहाँ हर तरफ बिखरी हुई है। हर पत्थर, हर मंदिर और हर टूटी हुई दीवार अपने समय की कोई न कोई कहानी बता रही थी।</p>
+
+
+        <p><strong style="color:var(--cream)">VIRUPAKSHA TEMPLE.</strong>
+        सबसे पहले मैं Virupaksha Temple पहुँचा। भगवान Shiva के Virupaksha रूप को समर्पित ये Hampi के सबसे महत्वपूर्ण और प्रसिद्ध temples में से एक है। विशाल gopuram, stone architecture और पूरा temple complex देखकर काफी देर तक बस उसे देखता रहा। फिर temple से बाहर निकलकर Hampi Bazaar की तरफ गया। आज यहाँ ancient stone-pillared structures और ruins दिखाई देते हैं, लेकिन कभी ये Vijayanagara Empire का एक महत्वपूर्ण marketplace हुआ करता था। उन पुराने pillars के बीच खड़े होकर बस imagine कर रहा था कि सदियों पहले यहाँ कितनी भीड़, दुकानें और रौनक रही होगी। एक तरफ मंदिर… दूसरी तरफ बाजार… और इनके बीच एक पूरा शहर।</p>
+
+        <p><strong style="color:var(--cream)">HEMAKUTA HILL — पहला SUNSET.</strong>
+        इसके बाद मैं Hemakuta Hill की तरफ चला गया। ऊपर जाकर एक जगह बैठ गया। दिन धीरे-धीरे खत्म हो रहा था और सामने Hampi का पूरा landscape दिखाई दे रहा था। फिर शुरू हुआ sunset। अकेला था, लेकिन उस समय अकेलापन बिल्कुल महसूस नहीं हो रहा था। बस बैठा रहा। कोई जल्दी नहीं थी। कोई पूछने वाला नहीं था कि अब कहाँ जाना है। बस मैं और सामने Hampi।</p>
+
+        <div class="quote">
+          <p>"मैं उन चीज़ों के लिए हमेशा वक्त निकालता हूँ, जो मुझे ज़िंदा होने का एहसास कराती हैं। ❤️"</p>
+        </div>
+
+        <p>शाम हो गई तो room वापस आया। थोड़ी देर आराम किया और फिर hotel में जाकर Hampi की famous local thali खाई। Dinner के बाद रात में फिर temple side निकल गया। दिन में जिस Hampi को भीड़ और tourists के बीच देखा था, रात में वही जगह एकदम शांत लग रही थी। थकान काफी थी, इसलिए वापस room आया और सो गया।</p>
+
+        <p><strong style="color:var(--cream)">2 JANUARY — MATANGA HILL SUNRISE.</strong>
+        सुबह उठकर fresh हुआ, नहाया और निकल पड़ा Matanga Hill की तरफ। Plan था—sunrise देखना। Matanga Hill तक पहुँचने के liye करीब 20 मिनट का climb करना पड़ता है। बड़े-बड़े rocks के बीच से रास्ता जाता है। सुबह का शांत माहौल और चारों तरफ फैली Hampi की landscape धीरे-धीरे सामने आ रही थी। ऊपर पहुँचकर बैठ गया। फिर धीरे-धीरे सूरज निकलने लगा। ऊपर से Hampi को देखना एक अलग ही experience था—नीचे ancient ruins, temples, boulders और दूर तक फैला landscape। कुछ देर वहीं बैठकर sunrise enjoy किया। फिर नीचे आया। Breakfast में वहाँ की idli खाई। Simple breakfast था, लेकिन उस वक्त वही सबसे perfect लग रहा था।</p>
+
+        <p><strong style="color:var(--cream)">VITTALA TEMPLE — STONE CHARIOT &amp; MUSICAL PILLARS.</strong>
+        इसके बाद मैं पैदल Vittala Temple Complex की तरफ निकल गया। करीब 1–1.5 km पैदल चलने के बाद वहाँ पहुँचा। Entry ticket लिया और अंदर explore करना शुरू किया। और फिर सामने आया— STONE CHARIOT (50 Rupees ke Note pe Jo pic h) — Hampi का iconic Stone Chariot। पत्थर से बना हुआ इतना detailed structure कि पहली नजर में विश्वास करना मुश्किल हो जाता है कि ये centuries पहले बनाया गया था।</p>
+
+        <p>फिर मैंने पूरा Vittala Temple Complex explore किया। सबसे ज्यादा attention गया— MUSICAL PILLARS — Vittala Temple के famous Musical Pillars। इनकी craftsmanship और detailing देखकर मैं काफी देर तक इन्हें देखता रहा। हर जगह information boards लगे हुए थे और मैं लगभग हर जगह रुककर उन्हें पढ़ रहा था। क्योंकि Hampi में सिर्फ monuments देखना काफी नहीं था। उनके पीछे की कहानी समझना ज्यादा interesting था।</p>
+
+        <p><strong style="color:var(--cream)">KING'S BALANCE.</strong>
+        इसके बाद मैंने King's Balance देखा। इस structure को Vijayanagara period की royal traditions से जोड़ा जाता है। इसके बारे में जानने के बाद इसे देखना सिर्फ एक stone structure देखने जैसा नहीं लगा, बल्कि उस समय की royal life की कल्पना होने लगी। Hampi में मुझे एक चीज बार-बार महसूस हो रही थी— जितना देखते जाओ, उतनी ही नई कहानी निकलती जाती है।</p>
+
+        <p><strong style="color:var(--cream)">KRISHNA TEMPLE.</strong>
+        बाद मe Krishna Temple की तरफ निकल गया। ये मंदिर Vijayanagara ruler Krishnadevaraya के समय से जुड़ा हुआ है। Temple की stone carvings और विशाल परिसर देखकर ancient craftsmen की skill देखकर हैरानी होती है। इतनी पुरानी civilization और इतने detailed structures… आज modern technology के बावजूद ऐसी craftsmanship imagine करना मुश्किल लगता है।</p>
+
+        <p><strong style="color:var(--cream)">LAKSHMI NARASIMHA.</strong>
+        इसके बाद पहुँचा Lakshmi Narasimha Statue के पास। यह विशाल stone sculpture Hampi के सबसे impressive monuments में से एक है। उसकी size और detailing को सामने खड़े होकर देखना अलग ही feeling देता है। कुछ देर वहाँ रुका और फिर आगे निकल गया।</p>
+
+        <p><strong style="color:var(--cream)">UNDERGROUND SHIVA TEMPLE.</strong>
+        इसके बाद पहुँचा Underground Shiva Temple। बाकी temples से ये जगह काफी अलग लगी। जमीन के level से नीचे बना temple, अंदर का शांत atmosphere और आसपास की ancient structure देखकर ऐसा लग रहा था जैसे Hampi का कोई hidden chapter देख रहा हूँ।</p>
+
+        <p><strong style="color:var(--cream)">PUSHKARANI — ANCIENT STEPPED WELL.</strong>
+        फिर आया Pushkarani। सीढ़ियों से नीचे उतरता हुआ ये ancient stepped water tank सिर्फ देखने में खूबसूरत नहीं था, बल्कि उस समय की engineering और water-management system का भी example था। इतने पुराने समय में पानी को store और manage करने के लिए ऐसी structures बनाना अपने आप में amazing था।</p>
+
+        <p><strong style="color:var(--cream)">TUNGABHADRA RIVER.</strong>
+        इसके बाद मैं Tungabhadra River के किनारे भी गया। इतने monuments और history explore करने के बाद नदी के पास बैठना बिल्कुल अलग experience था। कुछ देर वहाँ बैठा। पानी को देखा। आसपास के पुराने rocks और landscape को देखा। और बस थोड़ी देर कुछ नहीं किया। Solo trip में शायद यही सबसे अच्छी चीज थी— जब मन करे रुक जाओ। कोई schedule नहीं। कोई hurry नहीं।</p>
+
+        <p><strong style="color:var(--cream)">LOTUS MAHAL &amp; ELEPHANT STABLES.</strong>
+        इसके बाद वापस Virupaksha Temple side आया। वहीं पास में lunch किया और फिर एक cycle rent पर ली। अब Hampi को cycle से explore करने का अपना ही मजा था। Cycle लेकर मैं Elephant Stables की तरफ गया। ये विशाल arched structures देखकर अंदाजा लगाया जा सकता है कि Vijayanagara Empire में royal elephants के लिए कितनी बड़ी व्यवस्था रही होगी। इसके बाद पहुँचा Lotus Mahal। Lotus Mahal का architecture बाकी Hampi के structures से काफी अलग और elegant लगा। फिर आसपास के Zenana Enclosure और royal-era structures भी explore किए। हर जगह information boards लगे थे। मैं रुकता… पढ़ता… फिर structure देखता… और फिर आगे बढ़ जाता। इस तरह Hampi मेरे लिए सिर्फ sightseeing नहीं रहा था। मैं उस पुराने शहर को समझने की कोशिश कर रहा था।</p>
+
+        <p>..अभी Hampi बाकी था.. इसके बाद मैंने Hampi की और भी famous जगहें explore कीं— Achyutaraya Temple, Hemakuta Hill, Sasivekalu Ganesha, Kadalekalu Ganesha, Hampi Bazaar और आसपास के कई ancient ruins। हर जगह कुछ अलग था। कहीं massive stone architecture… कहीं intricate carvings… कहीं पुराने बाजारों के remains… कहीं मंदिर… और कहीं सिर्फ विशाल boulders के बीच खड़े centuries-old ruins। पूरा दिन घूमते-घूमते मैं काफी थक चुका था। लेकिन अंदर से satisfaction बहुत था। क्योंकि जिस trip पर जाने का मन शुरुआत में बिल्कुल नहीं हो रहा था… वही अब मेरी जिंदगी की सबसे अलग memories में शामिल हो चुका था।</p>
+
+        <p><strong style="color:var(--cream)">अकेले घूमने का असली मतलब।</strong>
+        इस trip में कोई मेरे साथ नहीं था। इसलिए शायद पहली बार मैंने अपनी speed से travel किया। जिस जगह मन किया वहाँ रुक गया। जिस monument के बारे में जानने का मन किया, उसके बारे में पढ़ा। जहाँ अच्छा view मिला, वहीं बैठ गया। जब भूख लगी खा लिया। जब थक गया आराम कर लिया। किसी को कुछ explain करने की जरूरत नहीं थी। और शायद यहीं मुझे एक बात समझ आई—</p>
+
+        <p style="color:var(--cream);font-weight:700">"Life ke plans bade nahi, simple hone chahiye… kyunki zindagi plan karne se zyada, jeene ke liye hai."</p>
+
+        <p>मैं बहुत कुछ plan करके नहीं निकला था। बस निकल पड़ा था। और रास्ते ने खुद बाकी कहानी लिख दी। शायद इसी को SOLO TRAVEL कहते हैं... एक अनजान शहर। 800+ km की journey। एक room। एक cycle। इतिहास से भरी गलियाँ। अजनबी लोग। और मैं… अपने साथ।</p>
+
+        <p>शायद पहले मुझे लगता था कि घूमने के लिए दोस्त चाहिए। लेकिन Hampi ने सिखाया कि कभी-कभी खुद के साथ भी एक पूरा सफर जिया जा सकता है। और शायद इसी वजह से अब जब मैं पीछे मुड़कर उस journey को देखता हूँ तो लगता है— अकेला गया था, लेकिन अकेला लौटा नहीं। साथ में बहुत सारी memories थीं। Virupaksha Temple की शाम… Hemakuta Hill का sunset… Matanga Hill का sunrise… Vittala Temple का Stone Chariot… Musical Pillars… Tungabhadra River… Lotus Mahal… Elephant Stables… और उन हजारों साल पुरानी दीवारों में छुपी कहानियाँ।</p>
+
+        <p>शायद जिंदगी में हर चीज को पकड़कर रखना जरूरी नहीं। कुछ चीजों को बस जीना चाहिए। कुछ जगहों पर जाना चाहिए। कुछ रास्तों पर अकेले चलना चाहिए। और कुछ memories को बिना किसी expectation के अपने अंदर रहने देना चाहिए।</p>
+
+        <p style="color:var(--cream);font-weight:700">Hampi मेरे लिए सिर्फ एक destination नहीं था। ये वो सफर था जहाँ कोई साथ नहीं मिला… तो मैंने खुद को ही अपना साथी बना लिया। और शायद यही इस पूरी journey की सबसे खूबसूरत बात थी।</p>
+
+        <p>एक सफर खत्म हुआ था… लेकिन अकेले घूमने की हिम्मत शुरू हो चुकी थी। और अगली सुबह… mujhe Hampi se Badami ke liye nikalna tha.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="place place-feature">
+    <div class="place-grid">
+      <div class="place-head">
+        <div>
+          <div class="place-num">09 / LAAL PATTHARON KE BEECH EK AUR ANKAHA SAFAR</div>
+          <h3>Badami</h3>
+        </div>
+        <div><span class="tag">Solo</span><span class="tag">Cave Temples</span><span class="tag">Chalukya Dynasty</span><span class="tag">History</span></div>
+      </div>
+      <div class="place-body">
+        <p>
+          Hampi ki galiyon, mandiron aur khandharon ko peeche chhodne ka waqt aa chuka tha. Hampi ne mujhe bahut kuch diya tha — itihaas, khoobsurat nazare,
+          akele ghoomne ka confidence aur sabse badi baat... khud ke saath waqt bitaane ka mauka. Lekin safar abhi khatam nahi hua tha.
+        </p>
+        <p>
+          Hampi se nikalne ke baad mera agla padaav tha — Badami. Maine bus pakdi aur Hampi se Badami ki taraf nikal pada. Lagbhag 4 ghante ka safar tha.
+          Raaste mein badalte hue landscapes ko dekhte-dekhte pata hi nahi chala ki kab Badami kareeb aa gaya. Aur jab Badami pahuncha, tab tak lagbhag 8 baj chuke the.
+        </p>
+
+        <p><strong style="color:var(--cream)">Badami — pattharon mein tarashi hui kahani.</strong>
+          Badami ko dekhkar pehli nazar mein hi samajh aa gaya ki ye jagah baaki jagahon se alag hai. Yahan pahad sirf pahad nahi the — unhein kaatkar
+          itihaas banaya gaya tha. Badami kabhi Chalukya dynasty ki rajdhani hua karta tha. Lagbhag 6vi se 8vi shatabdi ke beech yahan kala, vastukala
+          aur mandir nirmaan ka shaandaar vikas hua.
+        </p>
+        <p>
+          Sabse pehle meri nazar un vishaal laal baluaa pattharon waali pahadiyon par gayi. Aur phir saamne aaye — Badami Cave Temples. Chaar caves thi,
+          aur sabse khaas baat ye thi ki har cave ka apna alag character tha. Kahin Bhagwan Shiva ki vishaal pratimayein, kahin Vishnu ke alag-alag roop,
+          kahin Jain teerthankaron ki murtiyan — aur har jagah patthar par itni bareeki se kaam kiya gaya tha ki kuch der ke liye bas khade hokar dekhne
+          ka mann karta tha.
+        </p>
+
+
+        <p>
+          Mujhe baar-baar yahi lag raha tha — itne saal pehle logon ne ye sab banaya kaise hoga? Na aaj jaisi machines, na modern technology... bas patthar,
+          mehnat aur kala. Aur shaayad isi wajah se itihaas ki kitaab mein padhi hui cheez aur saamne khade hokar dekhi hui cheez mein zameen-aasmaan ka farq hota hai.
+        </p>
+
+        <p><strong style="color:var(--cream)">Agastya Lake — pahadon ke beech sukoon.</strong>
+          Caves explore karne ke baad main Agastya Lake ki taraf gaya. Chaaron taraf laal pahadiyan aur unke beech shaant paani. Ek taraf ancient architecture
+          aur doosri taraf paani ki shaanti. Kuch jagahein aisi hoti hain jahan aapko kuch karne ki zaroorat nahi hoti — bas baitho, dekho aur mehsoos karo.
+        </p>
+
+        <div class="quote">
+          <p>“Shehar mein shaayad main is lake ko bas ek tourist spot samajhkar aage badh jaata. Lekin akele safar mein har jagah thodi der ke liye aapki apni ho jaati hai.”</p>
+        </div>
+
+        <p><strong style="color:var(--cream)">Bhutanath Temple — paani ke kinare itihaas.</strong>
+          Agastya Lake ke kinare Bhutanath Temple bhi explore kiya. Paani ke saamne khada ancient temple, peeche laal pahad aur chaaron taraf itihaas —
+          wo pura drishya itna cinematic lag raha tha ki camera nikaalna to banta hi tha.
+        </p>
+
+        <p><strong style="color:var(--cream)">Badami Fort — ek aakhri chadhai.</strong>
+          Iske baad pahuncha Badami Fort. Laal chattanon ke upar bana ye fort Badami ka pura landscape upar se dikhaata hai. Thodi chadhai thi, lekin
+          ab tak trekking aur mountains ki aadat ho chuki thi. Upar pahunchkar neeche Badami ka pura area dikhayi de raha tha — lake, temples, caves,
+          red sandstone cliffs aur beech mein basa pura shehar. Ek baar phir laga ki India mein ghoomne ke liye sirf famous tourist places hi nahi hain.
+          Kabhi-kabhi kisi anjaan jagah ki taraf nikal jaana hi sabse achhi kahani bana deta hai.
+        </p>
+
+        <p>
+          Fort aur aas-paas ki jagahein dekhne ke baad museum bhi explore kiya. Badami mein mera waqt kam tha, lekin jitna samay mila, usme maine
+          caves se lekar lake, temples, fort aur museum tak jitna ho saka sab explore kiya. Aur phir shaam ke 4 baje ki train thi — ab wapas Mumbai jaana tha.
+        </p>
+
+        <p><strong style="color:var(--cream)">800 KM — phir se ghar ki taraf.</strong>
+          Train chali. Ek taraf safar khatam hone ka ehsaas tha, aur doosri taraf mann mein ek ajeeb si khushi thi. Kuch din pehle tak main bas soch raha tha
+          ki chhuttiyon mein kahin ghoomna hai. Koi dost available nahi tha, aur phir maine akele nikalne ka faisla kiya. Hampi → Badami → Mumbai, lagbhag
+          800 km ka safar phir se — lekin is baar mere saath koi dost nahi tha. Mere saath thi — saikdo tasveerein, hazaaron yaadein aur khud ke saath
+          bitaaye hue kuch din.
+        </p>
+        <p>
+          Aur sabse mazedaar baat? Ghar par kisi ko pata hi nahi tha ki main ye pura safar karke aa raha hoon. Maine ghar par ye baat bataayi hi nahi thi.
+          Aur phir kai ghanton ke safar ke baad jab main wapas ghar pahuncha, to sab kuch bilkul normal tha — jaise main kahin gaya hi nahi tha. Lekin mere
+          liye wo sirf ghar lautna nahi tha. Main ek alag insaan bankar wapas aaya tha.
+        </p>
+
+        <p style="color:var(--cream);font-weight:700">
+          "Kuch safar manzil ke liye nahi, sukoon ke liye hote hain."
+        </p>
+
+        <p>
+          Hampi ne mujhe itihaas dikhaya. Badami ne mujhe pattharon mein chhipi kala dikhayi. Aur akele safar ne mujhe khud se milna sikhaya. Shaayad isiliye
+          aaj bhi jab un dinon ki tasveerein dekhta hoon, to sirf jagahein yaad nahi aatin — yaad aata hai wo ladka, jo bina kisi ko bataaye ghar se nikla tha,
+          aur hazaaron kilometer door jaakar khud ke saath kuch khoobsurat yaadein bana aaya tha.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="final">
+<div class="container">
+  <div class="rule"><span>(05)</span><span>TO BE CONTINUED</span></div>
+  <h2>THE STORY<br>IS STILL <span class="blue">GOING.</span></h2>
+  <p>
+    School se Mumbai tak, office bag se trekking bag tak — abhi kahani khatam nahi hui.
+    Aur bhi jagah hain, aur bhi log hain, aur bhi raste hain.
+    Shayad next chapter kisi naye pahad par likha jayega.
+  </p>
+  <a class="btn" href="#trails">Explore the trail log</a>
+</div>
+</section>
+</main>
+
+<footer class="footer container">
+  <div>RANJIT / PERSONAL JOURNEY</div>
+  <div>BUILT AROUND MEMORIES, PEOPLE & MOUNTAINS</div>
+</footer>
+
+<script>
+window.addEventListener("scroll",()=>{
+  const h=document.documentElement;
+  const p=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100;
+  document.getElementById("progress").style.width=p+"%";
+});
+</script>
+
+<div id="galleryModal" class="gallery-modal">
+  <button class="gallery-close" onclick="closeGallery()">&times;</button>
+  <div class="gallery-modal-inner">
+    <div id="galleryFolderView">
+      <div class="gallery-title">Gallery</div>
+      <div class="gallery-sub">Har jagah ke saare photos yahan</div>
+      <div id="folderGrid" class="folder-grid">
+        <div class="gallery-state">Loading folders...</div>
+      </div>
+    </div>
+    <div id="galleryPhotoView" style="display:none">
+      <button class="gallery-back-btn" onclick="showFolders()">&larr; Back to folders</button>
+      <div class="gallery-title" id="photoViewTitle"></div>
+      <div id="photoGrid" class="photo-grid">
+        <div class="gallery-state">Loading photos...</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script>
+const GH_USER = 'Ranjit-copilot';
+const GH_REPO = 'Life-Story';
+const GH_BRANCH = 'main';
+const GALLERY_PATH = 'gallery';
+const IMG_EXT = /\.(jpe?g|png|webp|gif)$/i;
+
+function openGallery(){
+  document.getElementById('galleryModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  showFolders();
+}
+function closeGallery(){
+  document.getElementById('galleryModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function showFolders(){
+  document.getElementById('galleryPhotoView').style.display = 'none';
+  document.getElementById('galleryFolderView').style.display = 'block';
+  loadFolders();
+}
+function openLightbox(url){
+  document.getElementById('lightboxImg').src = url;
+  document.getElementById('lightbox').classList.add('open');
+}
+function closeLightbox(){
+  document.getElementById('lightbox').classList.remove('open');
+}
+
+async function loadFolders(){
+  const grid = document.getElementById('folderGrid');
+  grid.innerHTML = '<div class="gallery-state">Loading folders...</div>';
+  try{
+    const res = await fetch(`https://api.github.com/repos/${GH_USER}/${GH_REPO}/contents/${GALLERY_PATH}?ref=${GH_BRANCH}`);
+    if(!res.ok){
+      grid.innerHTML = '<div class="gallery-state">Abhi koi gallery folder nahi mila. "gallery" folder banao aur usme jagah ke naam se sub-folders daalo.</div>';
+      return;
+    }
+    const items = await res.json();
+    const folders = items.filter(i => i.type === 'dir');
+    if(folders.length === 0){
+      grid.innerHTML = '<div class="gallery-state">Abhi koi folder nahi hai. gallery/ ke andar jagah ke naam se folder banao.</div>';
+      return;
+    }
+    grid.innerHTML = '';
+    folders.forEach(f => {
+      const card = document.createElement('div');
+      card.className = 'folder-card';
+      card.innerHTML = `<div class="fname">${f.name}</div>`;
+      card.onclick = () => loadPhotos(f.name, f.path);
+      grid.appendChild(card);
+    });
+  }catch(e){
+    grid.innerHTML = '<div class="gallery-state">Kuch gadbad ho gayi, page refresh karke dobara try karo.</div>';
+  }
+}
+
+async function loadPhotos(name, path){
+  document.getElementById('galleryFolderView').style.display = 'none';
+  document.getElementById('galleryPhotoView').style.display = 'block';
+  document.getElementById('photoViewTitle').textContent = name;
+  const grid = document.getElementById('photoGrid');
+  grid.innerHTML = '<div class="gallery-state">Loading photos...</div>';
+  try{
+    const res = await fetch(`https://api.github.com/repos/${GH_USER}/${GH_REPO}/contents/${encodeURIComponent(path)}?ref=${GH_BRANCH}`);
+    const items = await res.json();
+    const photos = items.filter(i => i.type === 'file' && IMG_EXT.test(i.name));
+    if(photos.length === 0){
+      grid.innerHTML = '<div class="gallery-state">Is folder mein abhi koi photo nahi hai.</div>';
+      return;
+    }
+    grid.innerHTML = '';
+    photos.forEach(p => {
+      const img = document.createElement('img');
+      img.src = p.download_url;
+      img.loading = 'lazy';
+      img.alt = p.name;
+      img.onclick = () => openLightbox(p.download_url);
+      grid.appendChild(img);
+    });
+  }catch(e){
+    grid.innerHTML = '<div class="gallery-state">Photos load nahi ho paaye, dobara try karo.</div>';
+  }
+}
+</script>
+
+</body>
+</html>
