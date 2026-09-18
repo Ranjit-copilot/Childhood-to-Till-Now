@@ -19,6 +19,10 @@
   --border:rgba(230,227,212,.17);
 }
 *{box-sizing:border-box}
+/* Content protection: discourages casual copying/saving */
+html, body, img, a, button, .photo, .photo-grid img{ -webkit-user-select:none; user-select:none; -webkit-touch-callout:none; }
+img{ -webkit-user-drag:none; user-drag:none; }
+
 html{scroll-behavior:smooth}
 body{
   margin:0;
@@ -1373,6 +1377,22 @@ h1 .blue,.blue{color:var(--blue)}
 </footer>
 
 <script>
+/* Basic anti-copy protection. This cannot prevent screenshots or developer tools. */
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('dragstart', e => { if(e.target.closest('img')) e.preventDefault(); });
+document.addEventListener('selectstart', e => e.preventDefault());
+document.addEventListener('copy', e => e.preventDefault());
+document.addEventListener('cut', e => e.preventDefault());
+document.addEventListener('keydown', e => {
+  const k = e.key.toLowerCase();
+  if (e.key === 'F12' ||
+      (e.ctrlKey && ['s','u','c','x'].includes(k)) ||
+      (e.ctrlKey && e.shiftKey && ['i','j','c'].includes(k))) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+});
+
 window.addEventListener("scroll",()=>{
   const h=document.documentElement;
   const p=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100;
